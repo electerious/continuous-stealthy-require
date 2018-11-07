@@ -1,0 +1,38 @@
+{
+  "name": "continuous-stealthy-require",
+  "version": "1.0.0",
+  "authors": [
+    "Tobias Reich <tobias@electerious.com>"
+  ],
+  "description": "Requires a fresh, uncached module without causing a memory leak",
+  "main": "src/index.js",
+  "keywords": [
+    "require",
+    "fresh",
+    "uncached",
+    "cached",
+    "module"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/electerious/continuous-stealthy-require",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/electerious/continuous-stealthy-require.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc node_modules/mocha/bin/_mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "coveralls": "^3.0.0",
+    "mocha": "^5.0.0",
+    "nyc": "^12.0.1"
+  },
+  "dependencies": {
+    "stealthy-require": "^1.1.1"
+  }
+}
