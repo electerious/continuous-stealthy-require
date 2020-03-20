@@ -29,8 +29,8 @@
   "devDependencies": {
     "chai": "^4.1.1",
     "coveralls": "^3.0.0",
-    "mocha": "^5.0.0",
-    "nyc": "^12.0.1"
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0"
   },
   "dependencies": {
     "stealthy-require": "^1.1.1"
